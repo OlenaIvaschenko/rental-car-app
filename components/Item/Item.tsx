@@ -1,17 +1,44 @@
 import Image from "next/image";
 import css from "./Item.module.css"
-export default function CarInfoItem (){
+import Link from "next/link";
+import { Car } from "@/types/car";
+
+interface Props{
+  car:Car
+}
+
+export default function CarInfoItem ({car}:Props){
+
+  const lastTwo = car.address.split(", ").map(p => p.trim()).slice(-2);
 return (
-    <div>
+  <div className={css.cardContainer}>
+    <div className={css.imageWrapper}>
         <Image
-        src={"https://cdn.pixabay.com/photo/2025/02/25/07/52/suv-9429777_1280.jpg"}
+        src={car.img}
        
         alt="Photo of car"
         width={276}
         height={268}
         // sizes="(max-width: 768px) 100vw, 50vw"
-        className={css.avatar}
+        className={css.image}
       />
     </div>
+    <div className={css.carNamePriceWrapper}>
+      <h2 className ={css.carName}>{car.brand}<span className={css.span}>{car.model}</span>, {car.year}</h2>
+      <p className={css.carName}>{car.rentalPrice} $</p>
+    </div>
+    <div className={css.infoWrapper}>
+      <p className={css.text}>{lastTwo.join(" | ")}  {car.rentalCompany} |</p>
+      <p className={css.text}>{car.type} | {car.mileage}</p>
+    </div>
+    <div>
+      <Link
+      className={`${css.buttonEfect} ${css.link}`}
+      href={`/catalog/${car.id}`}
+      >
+      Read more
+      </Link>
+    </div>
+</div>
 )
 }

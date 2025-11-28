@@ -1,17 +1,22 @@
 import css from "./List.module.css"
 import CarInfoItem from "../Item/Item"
+import { Car } from "@/types/car"
 // import Car from "@/types/car"
 
-export default function CarList (){
-const cars=["1", "2", "3"]
+interface Props{
+  allCars:Car[];
+}
+
+export default function CarList ({allCars=[]}:Props){
+// const cars=["1", "2", "3"]
 return (
     
     <div className={css.listContainer}>
         <ul className={css.list}>
-      {cars.map((car, index) => {
+      {allCars.map((car, index) => {
         return (
           <li key={index} className={css.listItem}>
-            <CarInfoItem />
+            <CarInfoItem car={car}/>
           </li>
         );
       })}

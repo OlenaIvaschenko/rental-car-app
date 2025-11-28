@@ -1,3 +1,71 @@
-.avatar {
+.imageWrapper {
+    margin-bottom: 16px;
+}
+
+.image {
     object-fit: cover;
+}
+
+.cardContainer {
+    width: 276px;
+    height: 424px;
+}
+
+.carNamePriceWrapper {
+    width: 276px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  /* align-items: center;  */
+
+}
+
+.carName {
+    font-family: "Manrope", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+color: #101828;
+
+}
+.span {
+    color: #3470ff;
+}
+
+.infoWrapper {
+    margin-bottom: 28px;
+
+}
+
+.text {
+    font-family: "Manrope", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33333;
+color: #8d929a;
+}
+
+.link {
+    width: 276px;
+height: 44px;
+ /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+padding: 12px 99px;
+width: 276px;
+height: 44px;
+
+background-color: #3470ff;
+
+font-family: "Manrope", sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+color: #fff;
+
+white-space: nowrap; 
 }
