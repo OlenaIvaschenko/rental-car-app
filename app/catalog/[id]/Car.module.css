@@ -2,3 +2,50 @@
     object-fit: cover;
 }
 
+.icon{
+    fill: black;
+    width: 16px;
+    height: 16px;
+    padding-right: 2px;
+}
+
+.carContainer {
+    display: flex;
+    gap: 72px;
+}
+
+.titleIdWrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.iconCityMileageWrapper {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 16px;
+
+}
+
+.city {
+    padding-right: 16px;
+}
+
+.rentalPrice {
+    font-family: "Manrope", sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 1.33333;
+color: #3470ff;
+margin-bottom: 32px;
+}
+
+.carDescription {
+    font-family: "Manrope", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+color: #101828;
+
+}
