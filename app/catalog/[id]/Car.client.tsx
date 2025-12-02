@@ -55,13 +55,103 @@ const CarClient = () => {
         <p>Mileage: 5 858 km</p>
         </div>
         <p className={css.rentalPrice}>40$</p>
-        <p className={css.carDescription}>The Buick Enclave is a stylish and spacious SUV known for its comfortable ride and luxurious features.</p>
-
-        <svg className={css.icon}>
+        <p className={css.descrText}>The Buick Enclave is a stylish and spacious SUV known for its comfortable ride and luxurious features.</p>
+        
+        <p className={css.descrTitle}>Rental Conditions: </p>
+        <ul className={css.list}>
+          <li className={css.item}>
+            <svg className={css.icon}>
           <use href={`/sprite.svg#icon-check-circle`} />
         </svg>
+        <p className={css.bullets}>Minimum age : 25</p>
+          </li>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Security deposite required </p>
+          </li>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Valid driver`s license</p>
+          </li>
+        </ul>
+        <p className={css.descrTitle}>Car Specifications: </p>
+        <ul className={css.list}>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-Group`} />
+        </svg>
+        <p>Year: 2008</p>
+        </li>
+        <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-Group1`} />
+        </svg>
+        <p>Type: Suv</p>
+          </li>
+
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-Group2`} />
+        </svg>
+        <p>Fuel Consumption: 10.5</p>
+          </li>
+
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-gear`} />
+        </svg>
+        <p>Engine Size: 3.6L V6</p>
+          </li>
+        </ul>
+        
+        <p className={css.descrTitle}>Accessories and functionalities: </p>
+        <ul className={css.list}>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Leather seats</p>
+          </li>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Panoramic sunroof</p>
+          </li>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Remote start</p>
+          </li>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Blind-spot monitoring</p>
+          </li>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Power liftgate</p>
+          </li>
+          <li className={css.item}>
+            <svg className={css.icon}>
+          <use href={`/sprite.svg#icon-check-circle`} />
+        </svg>
+        <p>Premium audio system</p>
+          </li>
+
+          </ul>
+
+        </div>
       </div>
-    </div>
+    
   );
 };
 export default CarClient;
