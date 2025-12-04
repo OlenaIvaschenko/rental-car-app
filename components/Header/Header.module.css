@@ -1,0 +1,12 @@
+.icon {
+  width: 104px;
+  height: 16px;
+}
+
+.header {
+  border-bottom: 1px solid #f2f4f7;
+  padding: 24px 120px;
+  width: 1440px;
+  height: 68px;
+  background-color: #f2f4f7;
+}

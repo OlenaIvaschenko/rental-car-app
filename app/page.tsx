@@ -1,11 +1,14 @@
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "./page.module.css";
+import Hero from "@/components/Hero/Hero";
+// import Header from "@/components/Header/Header";
 
-export default function Home() {
+export default function MainPage() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-<p>MainPage</p>
+        {/* <Header /> */}
+        <Hero />
       </main>
     </div>
   );

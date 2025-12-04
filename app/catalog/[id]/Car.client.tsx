@@ -130,42 +130,7 @@ const CarClient = () => {
               </li>
             );
           })}
-          {/* <li className={css.item}>
-            <svg className={css.icon}>
-          <use href={`/sprite.svg#icon-check-circle`} />
-        </svg>
-        <p>Leather seats</p>
-          </li>
-          <li className={css.item}>
-            <svg className={css.icon}>
-          <use href={`/sprite.svg#icon-check-circle`} />
-        </svg>
-        <p>Panoramic sunroof</p>
-          </li>
-          <li className={css.item}>
-            <svg className={css.icon}>
-          <use href={`/sprite.svg#icon-check-circle`} />
-        </svg>
-        <p>Remote start</p>
-          </li>
-          <li className={css.item}>
-            <svg className={css.icon}>
-          <use href={`/sprite.svg#icon-check-circle`} />
-        </svg>
-        <p>Blind-spot monitoring</p>
-          </li>
-          <li className={css.item}>
-            <svg className={css.icon}>
-          <use href={`/sprite.svg#icon-check-circle`} />
-        </svg>
-        <p>Power liftgate</p>
-          </li>
-          <li className={css.item}>
-            <svg className={css.icon}>
-          <use href={`/sprite.svg#icon-check-circle`} />
-        </svg>
-        <p>Premium audio system</p>
-          </li> */}
+          
         </ul>
       </div>
     </div>
