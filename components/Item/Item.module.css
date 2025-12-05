@@ -4,11 +4,15 @@
 
 .image {
     object-fit: cover;
+    border-radius: 14px;
+width: 276px;
+height: 268px;
 }
 
 .cardContainer {
     width: 276px;
     height: 424px;
+    
 }
 
 .carNamePriceWrapper {

@@ -24,7 +24,7 @@ return (
       />
     </div>
     <div className={css.carNamePriceWrapper}>
-      <h2 className ={css.carName}>{car.brand}<span className={css.span}>{car.model}</span>, {car.year}</h2>
+      <h2 className ={css.carName}>{car.brand}<span className={css.span}> {car.model}</span>, {car.year}</h2>
       <p className={css.carName}>{car.rentalPrice} $</p>
     </div>
     <div className={css.infoWrapper}>
