@@ -130,7 +130,6 @@ const CarClient = () => {
               </li>
             );
           })}
-          
         </ul>
       </div>
     </div>

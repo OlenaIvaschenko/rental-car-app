@@ -6,8 +6,35 @@ import { getCars } from "@/lib/api/clientApi";
 
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { SyncLoader } from "react-spinners";
+import DropdownMenu from "@/components/DropdownBrand/DropdownBrand";
+import SearchForm from "@/components/SearchForm/SearchForm";
 
 export default function CatalogClient() {
+  
+//   const brands= [
+//   "Aston Martin",
+//   "Audi",
+//   "BMW",
+//   "Bentley",
+//   "Buick",
+//   "Chevrolet",
+//   "Chrysler",
+//   "GMC",
+//   "HUMMER",
+//   "Hyundai",
+//   "Kia",
+//   "Lamborghini",
+//   "Land Rover",
+//   "Lincoln",
+//   "MINI",
+//   "Mercedes-Benz",
+//   "Mitsubishi",
+//   "Nissan",
+//   "Pontiac",
+//   "Subaru",
+//   "Volvo"
+// ]
+
   const { data, fetchNextPage, hasNextPage, isLoading, error } =
     useInfiniteQuery({
       queryKey: ["cars"],
@@ -46,6 +73,8 @@ export default function CatalogClient() {
 
   return (
     <>
+    {/* <DropdownMenu brands={brands}/> */}
+    <SearchForm/>
       <CarList allCars={allCars} />
       {hasNextPage && (
         <button onClick={() => fetchNextPage()} className={css.showNext}>
