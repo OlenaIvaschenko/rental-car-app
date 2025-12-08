@@ -2,29 +2,7 @@
 import css from "./DropdownBrand.module.css";
 import { useState } from "react";
 
-// const brands= [
-//   "Aston Martin",
-//   "Audi",
-//   "BMW",
-//   "Bentley",
-//   "Buick",
-//   "Chevrolet",
-//   "Chrysler",
-//   "GMC",
-//   "HUMMER",
-//   "Hyundai",
-//   "Kia",
-//   "Lamborghini",
-//   "Land Rover",
-//   "Lincoln",
-//   "MINI",
-//   "Mercedes-Benz",
-//   "Mitsubishi",
-//   "Nissan",
-//   "Pontiac",
-//   "Subaru",
-//   "Volvo"
-// ]
+
 
 interface Props {
   brands: string[];
@@ -52,7 +30,7 @@ export default function DropdownBrand({ brands, setBrand, brand }: Props) {
       </button>
       {isOpen && (
         <ul className={css.menuList}>
-          {brands.map((brand, index) => {
+          {["", ...brands].map((brand, index) => {
             return (
               <li
                 key={index}

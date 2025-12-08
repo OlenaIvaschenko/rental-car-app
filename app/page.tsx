@@ -7,7 +7,6 @@ export default function MainPage() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        {/* <Header /> */}
         <Hero />
       </main>
     </div>
