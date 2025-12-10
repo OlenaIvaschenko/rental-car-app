@@ -1,5 +1,6 @@
 .imageWrapper {
     margin-bottom: 16px;
+    position: relative;
 }
 
 .image {
@@ -7,6 +8,7 @@
     border-radius: 14px;
 width: 276px;
 height: 268px;
+
 }
 
 .cardContainer {
@@ -72,4 +74,14 @@ line-height: 1.25;
 color: #fff;
 
 white-space: nowrap; 
+}
+
+.icon{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+  right: 16px;
+
+
 }

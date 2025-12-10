@@ -9,7 +9,6 @@ export interface CarResponse {
   page: string;
 }
 
-
 // export const getCars=async(
 //     // page:number, perPage:number
 // )=> {
@@ -17,32 +16,24 @@ export interface CarResponse {
 //   console.log(resp.data);
 //   return resp.data;
 // }
-export interface Filters{
-  brand:string;
-  rentalPrice:string;
-  minMileage:string;
-  maxMileage:string
+export interface Filters {
+  brand: string;
+  rentalPrice: string;
+  minMileage: string;
+  maxMileage: string;
 }
 
-
-export async function getCars(
-  page: number,
-  perPage: number,
-  filters:Filters
-) {
+export async function getCars(page: number, perPage: number, filters: Filters) {
   try {
-    const resp = await directApi.get<CarResponse>(`/cars`,
-      {
-        params: {
-          page,
-          perPage,
-          ...filters
-        },
-      }
-    );
+    const resp = await directApi.get<CarResponse>(`/cars`, {
+      params: {
+        page,
+        perPage,
+        ...filters,
+      },
+    });
 
     console.log(resp.data);
-    
 
     return resp.data;
   } catch {
@@ -50,18 +41,17 @@ export async function getCars(
   }
 }
 
-export  async function getCarById (id:string){
-const resp= await directApi.get<Car>(`/cars/${id}`)
+export async function getCarById(id: string) {
+  const resp = await directApi.get<Car>(`/cars/${id}`);
 
-console.log(resp.data);
+  console.log(resp.data);
 
-
-return resp.data
+  return resp.data;
 }
 
-export async function getBrands (){
-  const resp=await directApi.get<string[]>(`/brands`)
-  return resp.data
+export async function getBrands() {
+  const resp = await directApi.get<string[]>(`/brands`);
+  return resp.data;
 }
 
 // export interface BrandsHttpResponse {

@@ -3,15 +3,13 @@
 import CarList from "@/components/List/List";
 import css from "./Catalog.module.css";
 import { getCars } from "@/lib/api/clientApi";
-
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { SyncLoader } from "react-spinners";
-
 import SearchForm from "@/components/SearchForm/SearchForm";
 import { useFiltersDraftStore } from "@/lib/store/filtersStore";
 
 export default function CatalogClient() {
-  const { draft, setDraft, clearDraft } = useFiltersDraftStore();
+  const { draft} = useFiltersDraftStore();
 
   const { data, fetchNextPage, hasNextPage, isLoading, error } =
     useInfiniteQuery({
