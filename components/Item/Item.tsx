@@ -12,6 +12,7 @@ interface Props {
 export default function CarInfoItem({ car }: Props) {
   const { draft, setDraft } = useFavouriteDraftStore();
   const [isBlue, setIsBlue] = useState(() => draft.includes(car.id));
+ 
 
   const lastTwo = car.address
     .split(", ")

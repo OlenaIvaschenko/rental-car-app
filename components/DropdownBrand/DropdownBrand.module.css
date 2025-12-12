@@ -1,8 +1,54 @@
 .menuList {
-    z-index: 1;
-    position: absolute;
+  z-index: 1;
+  position: absolute;
+  border: 1px solid #f7f7f7;
+  border-radius: 12px;
+  width: 204px;
+  max-height: 272px;
+  overflow-y: auto;
+  box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
+  background: #fff;
 }
 
 .menuContainer {
-  position: relative; 
+  position: relative;
+  width: 204px;
+  /* height: 344px; */
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.menuButton {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #101828;
+
+  border-radius: 12px;
+
+  width: 204px;
+  height: 44px;
+  border: none;
+
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0px;
+  padding-inline: 0px;
+}
+
+.text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: #8d929a;
+}
+
+.menuList {
+  list-style-type: none;
 }

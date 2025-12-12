@@ -46,7 +46,7 @@ export default function SearchForm() {
       <input type="hidden" name="rentalPrice" value={price} />
       <DropdownPrice prices={prices} setPrice={setPrice} price={price} />
       <div>
-        <p>Car mileage / km</p>
+        <p className={css.text}>Car mileage / km</p>
 
         <input
           type="text"
@@ -62,7 +62,7 @@ export default function SearchForm() {
         />
       </div>
 
-      <button type="submit">Search</button>
+      <button type="submit" className={css.btnSearch}>Search</button>
     </form>
   );
 }

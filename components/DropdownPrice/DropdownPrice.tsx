@@ -9,6 +9,7 @@ interface Props {
 }
 
 export default function DropdownPrice({ prices, setPrice, price }: Props) {
+   const [isMenu, setIsMenu] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -19,12 +20,16 @@ export default function DropdownPrice({ prices, setPrice, price }: Props) {
 
   return (
     <div className={css.menuContainer}>
-      <p>Price/1 hour</p>
+      <p className={css.text}>Price/1 hour</p>
       <button onClick={toggle} type="button" className={css.menuButton}>
         {price === "" ? "Choose a price" : price}
-        <svg className={css.icon}>
-          <use href={`/sprite.svg#icon-Property-1Default`} />
-        </svg>{" "}
+        <svg className={css.icon} onClick={()=>{setIsMenu(!isMenu)}}>
+          <use
+            href={
+              isMenu? `/sprite.svg#icon-Property-1Default` : `/Vector_1.svg`
+            }
+          />
+        </svg>
       </button>
       {isOpen && (
         <ul className={css.menuList}>

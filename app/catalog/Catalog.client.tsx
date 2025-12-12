@@ -48,15 +48,15 @@ export default function CatalogClient() {
   console.log(allCars);
 
   return (
-    <>
+    <div className={css.catalogContainer}>
       {/* <DropdownMenu brands={brands}/> */}
       <SearchForm />
       <CarList allCars={allCars} />
       {hasNextPage && (
         <button onClick={() => fetchNextPage()} className={css.showNext}>
-          Показати ще
+         Load more
         </button>
       )}
-    </>
+    </div>
   );
 }
