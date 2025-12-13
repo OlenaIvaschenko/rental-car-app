@@ -1,22 +1,24 @@
-.form{
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
+.form {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 924px;
+  height: 68px;
 }
 
 .btnSearch {
-    border-radius: 12px;
-padding: 12px 51px;
-width: 156px;
-height: 44px;
-background-color: #3470ff;
-font-family: "Manrope", sans-serif;
-font-weight: 600;
-font-size: 16px;
-line-height: 125%;
-color: #fff;
-border: none;
+  border-radius: 12px;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+  background-color: #3470ff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  border: none;
 }
 .text {
   font-family: "Manrope", sans-serif;
@@ -24,4 +26,64 @@ border: none;
   font-size: 12px;
   line-height: 133%;
   color: #8d929a;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input {
+  width: 160px;
+  height: 44px;
+  background: #f7f7f7;
+  /* border-right: 1px solid #dadde1;
+  border-radius: 12px 0 0 12px; */
+  width: 160px;
+  height: 44px;
+
+  /* width: 100%; */
+  padding-left: 63px;
+
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+  border: none;
+}
+
+.prefix {
+  /* font-family: "Manrope", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+color: #101828; */
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 160px;
+  height: 44px;
+}
+
+.span {
+  position: absolute;
+  left: 24px;
+  top: 12px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+}
+
+.left {
+
+  border-right: 1px solid #dadde1;
+  border-radius: 12px 0 0  12px;
+}
+
+.right {
+  border-radius: 0 12px 12px 0;
 }

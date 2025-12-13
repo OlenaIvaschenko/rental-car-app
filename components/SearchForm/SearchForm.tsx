@@ -45,24 +45,36 @@ export default function SearchForm() {
       )}
       <input type="hidden" name="rentalPrice" value={price} />
       <DropdownPrice prices={prices} setPrice={setPrice} price={price} />
-      <div>
+      <div className={css.milage}>
         <p className={css.text}>Car mileage / km</p>
+        <div className={css.inputWrapper}>
 
-        <input
-          type="text"
-          name="minMileage"
-          className={css.input}
-          defaultValue={draft.minMileage}
-        />
-        <input
-          type="text"
-          name="maxMileage"
-          className={css.input}
-          defaultValue={draft.maxMileage}
-        />
+          <label className={css.prefix}>
+            <span className={css.span}>From </span>
+            <input
+              type="text"
+              name="minMileage"
+              className={`${css.input} ${css.left}` }
+              defaultValue={draft.minMileage}
+            />
+          </label>
+            
+            <label className={css.prefix}>
+              <span className={css.span}>To</span>
+            <input
+              type="text"
+              name="maxMileage"
+              className={`${css.input} ${css.right}` }
+              defaultValue={draft.maxMileage}
+            />
+            </label>
+        
+        </div>
       </div>
 
-      <button type="submit" className={css.btnSearch}>Search</button>
+      <button type="submit" className={css.btnSearch}>
+        Search
+      </button>
     </form>
   );
 }
