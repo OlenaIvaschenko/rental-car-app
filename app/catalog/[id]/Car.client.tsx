@@ -49,7 +49,7 @@ const CarClient = () => {
             alt="Photo of car"
             width={640}
             height={512}
-            // sizes="(max-width: 768px) 100vw, 50vw"
+            
             className={css.image}
           />
         </div>
@@ -94,27 +94,27 @@ const CarClient = () => {
             <svg className={css.icon}>
               <use href={`/sprite.svg#icon-Group`} />
             </svg>
-            <p>Year: 2008</p>
+            <p>Year: {car.year}</p>
           </li>
           <li className={css.item}>
             <svg className={css.icon}>
               <use href={`/sprite.svg#icon-Group1`} />
             </svg>
-            <p>Type: Suv</p>
+            <p>Type:{car.type} </p>
           </li>
 
           <li className={css.item}>
             <svg className={css.icon}>
               <use href={`/sprite.svg#icon-Group2`} />
             </svg>
-            <p>Fuel Consumption: 10.5</p>
+            <p>Fuel Consumption:{car.fuelConsumption} </p>
           </li>
 
           <li className={css.item}>
             <svg className={css.icon}>
               <use href={`/sprite.svg#icon-gear`} />
             </svg>
-            <p>Engine Size: 3.6L V6</p>
+            <p>Engine Size: {car.engineSize}</p>
           </li>
         </ul>
 
